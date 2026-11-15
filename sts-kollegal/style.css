@@ -1,0 +1,24 @@
+/*
+Theme Name: STS Kollegal
+Theme URI: https://stskollegal.org/
+Author: Sambhota Tibetan Schools Society (STSS)
+Author URI: https://stskollegal.org/
+Description: Standalone institutional WordPress theme for Sambhota Tibetan School, Dhondenling, Kollegal. Fully independent, lightweight, accessible, and optimized for Tibetan educational heritage and modern CBSE scholastic excellence.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.1.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sts-kollegal
+Tags: education, custom-menu, featured-images, custom-logo, full-width-template, theme-options, translation-ready, accessibility-ready
+*/
+
+/*
+ * Note: Theme styling is modularized in assets/css/:
+ * - assets/css/main.css        (Core layout, reset, design tokens, typography)
+ * - assets/css/header.css      (Institutional contact bar, crest & bilingual branding, navigation)
+ * - assets/css/footer.css      (3-column widgets, calendar widget, copyright bar)
+ * - assets/css/events.css      (Scoped .evt-card styles & lightbox viewer)
+ * - assets/css/responsive.css  (Viewport optimizations for mobile, tablet, desktop)
+ */

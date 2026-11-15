@@ -1,0 +1,158 @@
+/**
+ * STS Kollegal — Responsive Breakpoint Optimizations
+ * Ensures perfect rendering across Mobile (360px/390px), Tablet (768px/1024px), and Desktop (1280px/1440px)
+ */
+
+/* --- Desktop Nav Single-Row Guarantee (1100px - 1366px) --- */
+@media (min-width: 992px) and (max-width: 1366px) {
+	.sts-nav-menu > li > a {
+		padding: 14px clamp(6px, 0.8vw, 10px);
+		font-size: clamp(0.82rem, 0.88vw, 0.9rem);
+	}
+}
+
+/* --- Tablet Breakpoints (768px to 991px) --- */
+@media (max-width: 991px) {
+	.sts-topbar-inner {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.sts-topbar-contact {
+		justify-content: center;
+		gap: 12px;
+	}
+
+	.sts-branding {
+		gap: 14px;
+	}
+}
+
+/* --- Mobile Viewports (< 768px) --- */
+@media (max-width: 767px) {
+	/* Strict horizontal overflow prevention */
+	body, html {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	.sts-container {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	/* Topbar on mobile */
+	.sts-topbar {
+		padding: 6px 0;
+	}
+
+	.sts-topbar-hours {
+		display: none; /* Hide operating hours on very small screens to keep clean */
+	}
+
+	.sts-topbar-contact {
+		gap: 10px;
+		font-size: 0.8rem;
+	}
+
+	/* Brand identity */
+	.sts-brand-header {
+		padding: 12px 0;
+	}
+
+	.sts-logo img,
+	.custom-logo {
+		width: 65px;
+	}
+
+	.sts-tibetan-title {
+		font-size: 1.05rem;
+	}
+
+	.sts-school-name {
+		font-size: 1rem;
+	}
+
+	.sts-affiliation {
+		font-size: 0.7rem;
+	}
+
+	/* Post grid on mobile */
+	.sts-posts-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	/* Single post navigation */
+	.post-navigation .nav-links {
+		grid-template-columns: 1fr;
+	}
+
+	/* Footer widgets */
+	.sts-footer-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.sts-footer-bottom-inner {
+		flex-direction: column;
+		text-align: center;
+		gap: 10px;
+	}
+}
+
+/* --- Narrow Mobile Viewports (360px - 400px, e.g. iPhone / Android) --- */
+@media (max-width: 400px) {
+	.sts-container {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.sts-branding {
+		gap: 10px;
+	}
+
+	.sts-logo img,
+	.custom-logo {
+		width: 52px;
+	}
+
+	.sts-tibetan-title {
+		font-size: 0.95rem;
+	}
+
+	.sts-school-name {
+		font-size: 0.88rem;
+	}
+
+	.sts-affiliation {
+		display: none; /* Hide long subtitle on tiny screens to avoid clumping */
+	}
+
+	.sts-topbar-inner {
+		font-size: 0.75rem;
+	}
+}
+
+/* --- Print Styles --- */
+@media print {
+	.sts-topbar,
+	.sts-main-navigation,
+	.sts-nav-toggle,
+	.sts-scroll-top,
+	.sts-footer-bottom,
+	.sts-pagination-wrapper,
+	.post-navigation {
+		display: none !important;
+	}
+
+	body {
+		background: #fff !important;
+		color: #000 !important;
+	}
+
+	.sts-container {
+		max-width: 100% !important;
+		padding: 0 !important;
+	}
+}

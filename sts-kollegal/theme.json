@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        {
+          "slug": "maroon",
+          "color": "#800000",
+          "name": "Tibetan Maroon"
+        },
+        {
+          "slug": "maroon-dark",
+          "color": "#5A0000",
+          "name": "Deep Maroon"
+        },
+        {
+          "slug": "navy",
+          "color": "#002B49",
+          "name": "Institutional Navy"
+        },
+        {
+          "slug": "navy-deep",
+          "color": "#0E266D",
+          "name": "Deep Navy"
+        },
+        {
+          "slug": "gold",
+          "color": "#D4AF37",
+          "name": "Accent Gold"
+        },
+        {
+          "slug": "gold-light",
+          "color": "#FFD84D",
+          "name": "Warm Gold"
+        },
+        {
+          "slug": "slate-dark",
+          "color": "#171A1D",
+          "name": "Slate Dark"
+        },
+        {
+          "slug": "soft-bg",
+          "color": "#F8FAFC",
+          "name": "Soft Background"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "Pure White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+          "slug": "system",
+          "name": "System UI"
+        },
+        {
+          "fontFamily": "'Noto Sans Tibetan', 'Jomolhari', 'Microsoft Himalaya', sans-serif",
+          "slug": "tibetan",
+          "name": "Tibetan Script"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1440px"
+    }
+  }
+}
