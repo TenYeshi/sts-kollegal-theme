@@ -10,14 +10,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-
-$is_elementor = sts_is_elementor_page();
 ?>
 
 <main id="main" class="site-main" role="main">
 	<?php
 	while ( have_posts() ) :
 		the_post();
+		$is_elementor = sts_is_elementor_page( get_the_ID() );
 
 		if ( $is_elementor ) :
 			?>
